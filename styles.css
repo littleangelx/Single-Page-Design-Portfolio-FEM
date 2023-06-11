@@ -1,0 +1,661 @@
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #FFF7F0;
+    overflow-x: hidden;
+}
+
+
+/* Header section and basic button formatting */
+
+header {
+    width: 1111px;
+    height: 64px;
+    position: absolute;
+    left: calc(50% - 1111px/2);
+    top: 34px;
+}
+
+.logo {
+    width: 64px;
+    height: 64px;
+}
+
+.consultation {
+    width: 228px;
+    height: 56px;
+    border: none;
+    border-radius: 28px;
+    color: #FFF7F0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.consultation-black {
+    background-color: #030303;
+}
+
+.consultation-black:hover {
+    background-color: #755CDE;
+    cursor: pointer;
+}
+
+.consultation-red {
+    background-color: #EB7565;
+}
+
+.consultation-red:hover {
+    background-color: #F6A560;
+    cursor: pointer;
+}
+
+header>.consultation {
+    float: right;
+}
+
+
+/* Top heading section */
+
+.heading {
+    width: 752px;
+    position: absolute;
+    top: 164px;
+    left: calc(50% - 752px/2);
+}
+
+.heading>.heading-text {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 70.56px;
+    text-align: center;
+    color: #030303;
+    padding-bottom: 23px;
+}
+
+.heading>.body-text {
+    width: 730px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #7A746E;
+}
+
+
+/* Skills section */
+
+.skills {
+    width: 1111px;
+    height: 364px;
+    position: absolute;
+    left: calc(50% - 1111px/2);
+    top: 394px;
+    display: grid;
+    grid-template-rows: 182px 158px;
+    gap: 24px;
+}
+
+.skills-graphic-design {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #755CDE;
+    border-radius: 8px;
+    position: relative;
+}
+
+.skills-ui-ux {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-color: #F6A560;
+    border-radius: 8px;
+    position: relative;
+}
+
+.skills-apps {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    background-color: #F39E9E;
+    border-radius: 8px;
+    position: relative;
+}
+
+.skills-illustrations {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: #EB7565;
+    border-radius: 8px;
+    position: relative;
+}
+
+.skills-photography {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    background-color: #61C4B7;
+    border-radius: 8px;
+    position: relative;
+}
+
+.skills-motion-graphics {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    background-color: #552049;
+    border-radius: 8px;
+    position: relative;
+}
+
+.skill-image>img {
+    float: right;
+    border-top-right-radius: 8px;
+}
+
+.skill-text {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30.24px;
+    color: #fff;
+}
+
+
+/* Profile section */
+
+.profile {
+    width: 1110px;
+    position: absolute;
+    left: calc(50% - 1110px/2);
+    top: 894px;
+}
+
+.profile-image {
+    width: 445px;
+    height: 445px;
+}
+
+.profile-text-section {
+    width: 540px;
+    height: 306px;
+    position: absolute;
+    left: 570px;
+    top: 70px;
+}
+
+.profile-text-section>.heading-text {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50.4px;
+    color: #030303;
+}
+
+.profile-text-section>.body-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #7A746E;
+    position: absolute;
+    top: 134px;
+}
+
+.profile-text-section>button {
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* Carousel section */
+
+.my-work {
+    height: 576px;
+    width: 100vw;
+    position: absolute;
+    top: 1427px;
+}
+
+.my-work>.heading-text {
+    width: 136px;
+    position: absolute;
+    left: calc(50% - 136px/2);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40.32px;
+    color: #030303;
+}
+
+#carousel {
+    width: 2820px;
+    position: absolute;
+    top: 96px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    transition: left 1s;
+}
+
+.carousel-item {
+    border-radius: 10px;
+}
+
+.slide-buttons {
+    width: 144px;
+    height: 64px;
+    position: absolute;
+    top: 1939px;
+    left: calc(50% - 144px/2);
+    display: flex;
+    justify-content: space-between;
+}
+
+.prev-icon,
+.next-icon {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #030303;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prev-icon:hover,
+.next-icon:hover {
+    background-color: #755CDE;
+    cursor: pointer;
+}
+
+.next-icon {
+    left: 80px;
+}
+
+
+/* CTA section */
+
+.cta {
+    width: 1110px;
+    height: 320px;
+    position: absolute;
+    top: 2091px;
+    left: calc(50% - 1110px/2);
+    background-color: #030303;
+    border-radius: 10px;
+}
+
+.booking-section {
+    width: 540px;
+    height: 159px;
+    position: absolute;
+    top: 81px;
+    left: 65px;
+}
+
+.booking-section>.heading-text {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50.4px;
+    color: #FFF7F0;
+}
+
+.booking-section>.body-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFF7F0;
+    position: absolute;
+    bottom: 0;
+}
+
+.cta>button {
+    position: absolute;
+    top: 132px;
+    left: 787px;
+}
+
+
+/* Footer section */
+
+footer {
+    width: 1111px;
+    position: absolute;
+    top: 2467px;
+    left: calc(50% - 1111px/2);
+}
+
+footer>button {
+    float: right;
+}
+
+
+/* Tablet size */
+
+@media (min-width: 768px) and (max-width: 1100px) {
+    header {
+        width: 689px;
+        left: calc(50% - 689px/2);
+    }
+
+    .heading {
+        width: 690px;
+        left: calc(50% - 690px/2);
+        top: 162px;
+    }
+
+    .heading>.heading-text {
+        font-size: 44px;
+        line-height: 55.44px;
+        padding-bottom: 27px;
+    }
+
+    .heading>.body-text {
+        width: 573px;
+        left: calc(50% - 573px/2);
+    }
+
+    .skills {
+        width: 690px;
+        height: 570px;
+        left: calc(50% - 690px/2);
+        top: 364px;
+        grid-template-rows: 182px 182px;
+    }
+
+    .skills-photography {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .skills-motion-graphics {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+
+    .profile {
+        width: 772px;
+        height: 364px;
+        left: -44px;
+        top: 1054px;
+    }
+
+    .profile-image {
+        width: 364px;
+        height: 364px;
+    }
+
+    .profile-text-section {
+        width: 339px;
+        height: 364px;
+        left: 433px;
+        top: 0;
+    }
+
+    .profile-text-section>.heading-text {
+        font-size: 32px;
+        line-height: 40.3px;
+    }
+
+    .profile-text-section>.body-text {
+        top: 144px;
+    }
+
+
+    .my-work {
+        top: 1538px;
+    }
+
+    .slide-buttons {
+        top: 2050px;
+    }
+
+
+    .cta {
+        width: 690px;
+        height: 352px;
+        top: 2234px;
+        left: calc(50% - 690px/2);
+    }
+
+    .booking-section {
+        width: 540px;
+        height: 232px;
+        top: 56px;
+    }
+
+    .booking-section>.heading-text {
+        font-size: 32px;
+        line-height: 40.32px;
+        text-align: center;
+    }
+
+    .booking-section>.body-text {
+        top: 66px;
+        text-align: center;
+    }
+
+    .cta>button {
+        top: 232px;
+        left: calc(50% - 228px/2);
+    }
+
+
+    footer {
+        width: 689px;
+        top: 2642px;
+        left: calc(50% - 689px/2);
+    }
+
+}
+
+
+/* Mobile size */
+
+@media (max-width: 767px) {
+    header {
+        width: 343px;
+        height: 48px;
+        top: 16px;
+        left: calc(50% - 343px/2);
+    }
+
+    .logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .consultation {
+        width: 176px;
+        height: 44px;
+        font-size: 14px;
+    }
+
+
+    .heading {
+        width: 343px;
+        top: 96px;
+        left: calc(50% - 343px/2);
+    }
+
+    .heading>.heading-text {
+        font-size: 36px;
+        line-height: 45px;
+        padding-bottom: 16px;
+    }
+
+    .heading>.body-text {
+        width: 285px;
+        font-size: 16px;
+        line-height: 26px;
+        position: absolute;
+        left: calc(50% - 285px/2);
+    }
+
+
+    .skills {
+        width: 343px;
+        height: 1164px;
+        top: 338px;
+        left: calc(50% - 343px/2);
+        grid-template-rows: 182px 182px 182px 158px 182px 182px;
+    }
+
+    .skills-ui-ux {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .skills-apps {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .skills-illustrations {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .skills-photography {
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .skills-motion-graphics {
+        grid-row-start: 6;
+        grid-row-end: 7;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+
+    .profile {
+        width: 343px;
+        top: 1602px;
+        left: calc(50% - 343px/2);
+    }
+
+    .profile-image {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        left: calc(50% - 300px/2);
+    }
+
+    .profile-text-section {
+        width: 343px;
+        height: 262px;
+        left: 0;
+        top: 340px;
+    }
+
+    .profile-text-section>.heading-text {
+        font-size: 26px;
+        line-height: 33px;
+        text-align: center;
+    }
+
+    .profile-text-section>.body-text {
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        top: 90px;
+    }
+
+    .profile-text-section>button {
+        left: calc(50% - 176px/2);
+    }
+
+
+    .my-work {
+        height: 338px;
+        top: 2304px;
+    }
+
+    .my-work>.heading-text {
+        width: 102px;
+        font-size: 24px;
+        line-height: 30px;
+        left: calc(50% - 102px/2);
+    }
+
+    #carousel {
+        width: 1410px;
+        top: 62px;
+        gap: 15px;
+    }
+
+    .carousel-item {
+        width: 270px;
+        height: 180px;
+    }
+
+    .slide-buttons {
+        top: 2578px;
+    }
+
+    .cta {
+        width: 343px;
+        height: 352px;
+        top: 2742px;
+        left: calc(50% - 343px/2);
+    }
+
+    .booking-section {
+        width: 295px;
+        height: 255px;
+        top: 49px;
+        left: calc(50% - 295px/2);
+    }
+
+    .booking-section>.heading-text {
+        width: 240px;
+        font-size: 26px;
+        line-height: 33px;
+        position: absolute;
+        left: calc(50% - 240px/2);
+    }
+
+    .booking-section>.body-text {
+        width: 295px;
+        font-size: 16px;
+        line-height: 26px;
+        top: 57px;
+        text-align: center;
+        position: absolute;
+        left: calc(50% - 295px/2);
+    }
+
+    .cta>button {
+        top: 260px;
+        left: calc(50% - 176px/2);
+    }
+
+
+    footer {
+        width: 343px;
+        top: 3134px;
+        left: calc(50% - 343px/2);
+    }
+}
